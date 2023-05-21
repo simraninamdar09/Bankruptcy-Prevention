@@ -4,7 +4,7 @@
 # In[31]:
 
 #import pickle
-pip install scikit_learn
+pip install openpyxl
 #libraries
 import pandas as pd # data processing
 import numpy as np # linear algebra
