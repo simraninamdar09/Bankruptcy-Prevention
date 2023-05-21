@@ -10,7 +10,7 @@ requests
 cachetools 
 python-dateutil 
 packaging 
-libgl1
+libgl
 rich 
 typing-extensions 
 gitpython 
