@@ -14,7 +14,7 @@ import numpy as np # linear algebra
 #import matplotlib.pyplot as plt 
 
 #feature engineering
-#from sklearn import preprocessing
+from sklearn import preprocessing
 
 # data transformation
 from sklearn.metrics import accuracy_score
