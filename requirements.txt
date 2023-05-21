@@ -13,7 +13,7 @@ packaging
 rich 
 typing-extensions 
 gitpython 
-libgl1
+libgl
 watchdog 
 tenacity 
 pyarrow 
