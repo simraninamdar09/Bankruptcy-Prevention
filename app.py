@@ -109,11 +109,11 @@ data=pd.concat([data['class'],data_F],axis=1)
 
 
 # Dividing data into Features(X) & Target(y)
-X = data.iloc[:,1:]
+x = data.iloc[:,1:]
 y=data['class']
 # Train-Test Split 
 #Train test split will be a 70:30 ratio respectively.
-x_train,x_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=42)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42)
 #Adaboost Classification
 model_knn = KNeighborsClassifier(n_neighbors=2)
 model_knn.fit(x_train,y_train)
@@ -135,7 +135,7 @@ if st.button('Mushroom type'):
 
     #query = query.reshape(1, 16)
 
-    #prediction=pickled_model.predict(data.drop('class',axis=1))
+    prediction=pickled_model.predict(data.drop('class',axis=1))
     
     if pk.any()==1:
         prediction = "edible Mushroom"
