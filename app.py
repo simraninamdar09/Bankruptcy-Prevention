@@ -4,7 +4,7 @@
 # In[31]:
 
 #import pickle
-
+import scikit_learn as sklearn
 #libraries
 import pandas as pd # data processing
 import numpy as np # linear algebra
