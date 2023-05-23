@@ -32,9 +32,7 @@ import streamlit as st
 
 # Loading data
 data=pd.read_excel('bankruptcy-prevention.xlsx')
-
-
-
+st.title("Bankruptcy Prevention")
 data.head()
 Industrial_risk = st.selectbox('industrial_risk', [0,0.5,1])
 Management_risk = st.selectbox('management_risk', [0,0.5,1])
@@ -50,7 +48,7 @@ Operating_risk = st.selectbox('operating_risk', [0,0.5,1])
 
 data[' class'].unique()
 
-st.title("Bankruptcy Prevention")
+#st.title("Bankruptcy Prevention")
 
 
 # OHE on Features
