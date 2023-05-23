@@ -86,16 +86,16 @@ pk=pickled_model.predict(x_test)
 
 
 if st.button('prevention type'):
-     #prediction=pickled_model.predict(data.drop(' class',axis=1))
+      prediction=pickled_model.predict(data.drop(' class',axis=1))
     
-   # if pk.any() == 0:
-       # prediction = "Bankruptcy"
-    #else:
-      #  prediction = "Non-Bankruptcy"
-     if pk.all() == 0:
-         pk = 'Bankruptcy'
+     if pk.any() == 0:
+         prediction = "Bankruptcy"
      else:
-         pk = 'Non-bankruptcy'
+         prediction = "Non-Bankruptcy"
+    # if pk.all() == 0:
+        # pk = 'Bankruptcy'
+    # else:
+        # pk = 'Non-bankruptcy'
   
   
 #prediction=pickled_model.predict(data.drop(' class',axis=1))
