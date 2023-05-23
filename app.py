@@ -93,9 +93,9 @@ if st.button('prevention type'):
        # prediction = "Bankruptcy"
     #else:
       #  prediction = "Non-Bankruptcy"
-      if prediction == 0:
+    if prediction == 0:
         prediction = 'Bankruptcy'
-      else:
+    else:
           prediction = 'Non-bankruptcy'
         
        
