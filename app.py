@@ -47,7 +47,7 @@ operating_risk = st.selectbox('operating_risk', [0,0.5,1])
   
   
 
-#data  ustrial_risk'=np.where(data['industrial_risk'].isin([0,0.5,1]),
+#ata['industrial_risk']=np.where(data['industrial_risk'].isin([0,0.5,1]),
                           # data['industrial_risk'])
 
 #ata['management_risk']=np.where(data['management_risk'].isin([0,0.5,1]),
@@ -122,10 +122,10 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42
 #Adaboost Classification
 model_knn = KNeighborsClassifier(n_neighbors=2)
 model_knn.fit(x_train,y_train)
-       
-result_knn= model_knn.score(x_test,y_test)
+y_pred_knn= model_knn.predict(x_test)
+
 #Accuracy
-print(accuracy_score(x_test,y_test))
+print(accuracy_score(y_test,y_pred_knn))
 
 
 ffilename = 'final_KNN_model.pkl'
