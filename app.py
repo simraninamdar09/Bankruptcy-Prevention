@@ -104,6 +104,7 @@ st.title("Bankruptcy Prevention")
 data_F=pd.get_dummies(data.iloc[:,1:])
 
 # Lebel encoding on target
+from sklearn import preprocessing
 label_encoder=preprocessing.LabelEncoder()
 data['class']=label_encoder.fit_transform(data['class'])
 
