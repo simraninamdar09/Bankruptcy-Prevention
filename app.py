@@ -36,12 +36,12 @@ data=pd.read_excel('bankruptcy-prevention.xlsx')
 
 
 data.head()
-  industrial_risk = st.selectbox('industrial_risk', [0,0.5,1])
+ industrial_risk = st.selectbox('industrial_risk', [0,0.5,1])
  management_risk = st.selectbox('management_risk', [0,0.5,1])
-  financial_flexibility = st.selectbox('financial_flexibility', [0,0.5,1])
+ financial_flexibility = st.selectbox('financial_flexibility', [0,0.5,1])
  credibility = st.selectbox('credibility', [0,0.5,1])
-  competitiveness =st.selectbox('competitiveness', [0,0.5,1])
-operating_risk = st.selectbox('operating_risk', [0,0.5,1])
+ competitiveness =st.selectbox('competitiveness', [0,0.5,1])
+ operating_risk = st.selectbox('operating_risk', [0,0.5,1])
   
   
   
@@ -91,7 +91,7 @@ data['class'].unique()
 st.title("Bankruptcy Prevention")
 
 industrial_risk= st.selectbox('industrial_risk', data['industrial_risk'].unique())
-management_risk= st.selectbox('management_risk', data['management_risk'].unique())
+ management_risk= st.selectbox('management_risk', data['management_risk'].unique())
 financial_flexibility= st.selectbox('financial_flexibility', data['financial_flexibility'].unique())
 credibility= st.selectbox('credibility', data['credibility'].unique())
 competitiveness= st.selectbox('competitiveness', data['competitiveness'].unique())
