@@ -133,6 +133,7 @@ pickled_model=pickle.load(open('final_KNN_model.pkl','rb'))
 pickled_model.fit(x_train,y_train)
 pk=pickled_model.predict(x_test)
 
+
 if st.button('prevention type'):
    # query = np.array([cap_shape,cap_surface,cap_color,bruises,odor,
                       #gill_spacing,gill_size,gill_color,stalk_shape,stalk_root,stalk_surface_above_ring,
