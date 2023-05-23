@@ -86,7 +86,7 @@ operating_risk = st.selectbox('operating_risk', [0,0.5,1])
 
 
 # In[48]:
-#data['class'].unique()
+data[' class'].unique()
 
 st.title("Bankruptcy Prevention")
 
@@ -115,7 +115,7 @@ data=pd.concat([data[' class'],data_F],axis=1)
 
 # Dividing data into Features(X) & Target(y)
 x = data.iloc[:,1:]
-y=data['class']
+y=data[' class']
 # Train-Test Split 
 #Train test split will be a 70:30 ratio respectively.
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42)
