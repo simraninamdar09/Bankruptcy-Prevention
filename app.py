@@ -36,23 +36,33 @@ data=pd.read_excel('bankruptcy-prevention.xlsx')
 
 
 data.head()
+  industrial_risk = st.selectbox('industrial_risk', [0,0.5,1])
+ management_risk = st.selectbox('management_risk', [0,0.5,1])
+  financial_flexibility = st.selectbox('financial_flexibility', [0,0.5,1])
+ credibility = st.selectbox('credibility', [0,0.5,1])
+  competitiveness =st.selectbox('competitiveness', [0,0.5,1])
+operating_risk = st.selectbox('operating_risk', [0,0.5,1])
+  
+  
+  
+  
 
-data['industrial_risk']=np.where(data['industrial_risk'].isin([0,0.5,1]),
+#data  ustrial_risk'=np.where(data['industrial_risk'].isin([0,0.5,1]),
                            data['industrial_risk'])
 
-data['management_risk']=np.where(data['management_risk'].isin([0,0.5,1]),
+#ata['management_risk']=np.where(data['management_risk'].isin([0,0.5,1]),
                            data['management_risk'])
 
-data['financial_flexibility']=np.where(data['financial_flexibility'].isin([0,0.5,1]),
+#ata['financial_flexibility']=np.where(data['financial_flexibility'].isin([0,0.5,1]),
                            data['financial_flexibility'])
 
-data['credibility']=np.where(data['credibility'].isin([0,0.5,1]),
+#ata['credibility']=np.where(data['credibility'].isin([0,0.5,1]),
                            data['credibility'])
 
-data['competitiveness']=np.where(data['competitiveness'].isin([0,0.5,1]),
+#ata['competitiveness']=np.where(data['competitiveness'].isin([0,0.5,1]),
                            data['competitiveness'])
 
-data['operating_risk']=np.where(data['operating_risk'].isin([0,0.5,1]),
+#ata['operating_risk']=np.where(data['operating_risk'].isin([0,0.5,1]),
                            data['operating_risk'])
 
 
