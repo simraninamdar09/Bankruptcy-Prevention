@@ -91,7 +91,7 @@ data['class'].unique()
 st.title("Bankruptcy Prevention")
 
 industrial_risk= st.selectbox('industrial_risk', data['industrial_risk'].unique())
- management_risk= st.selectbox('management_risk', data['management_risk'].unique())
+management_risk= st.selectbox('management_risk', data['management_risk'].unique())
 financial_flexibility= st.selectbox('financial_flexibility', data['financial_flexibility'].unique())
 credibility= st.selectbox('credibility', data['credibility'].unique())
 competitiveness= st.selectbox('competitiveness', data['competitiveness'].unique())
