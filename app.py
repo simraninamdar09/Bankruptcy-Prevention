@@ -122,10 +122,10 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42
 #Adaboost Classification
 model_knn = KNeighborsClassifier(n_neighbors=2)
 model_knn.fit(x_train,y_train)
-y_pred_knn= model_knn.predict(x_test)
+result_knn = model_knn.score(x_test,y_test)
 
 #Accuracy
-print(accuracy_score(y_test,y_pred_knn))
+print(np.round(result_knn, 4))
 
 
 ffilename = 'final_KNN_model.pkl'
