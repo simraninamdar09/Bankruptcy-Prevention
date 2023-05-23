@@ -141,7 +141,7 @@ if st.button('prevention type'):
 
     #query = query.reshape(1, 16)
 
-    prediction=pickled_model.predict(data.drop('class',axis=1))
+    prediction=pickled_model.predict(data.drop(' class',axis=1))
     
     if pk.any()==1:
         prediction = "banrupy"
