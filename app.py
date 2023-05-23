@@ -86,16 +86,16 @@ operating_risk = st.selectbox('operating_risk', [0,0.5,1])
 
 
 # In[48]:
-data['class'].unique()
+#data['class'].unique()
 
 st.title("Bankruptcy Prevention")
 
-industrial_risk= st.selectbox('industrial_risk', data['industrial_risk'].unique())
-management_risk= st.selectbox('management_risk', data['management_risk'].unique())
-financial_flexibility= st.selectbox('financial_flexibility', data['financial_flexibility'].unique())
-credibility= st.selectbox('credibility', data['credibility'].unique())
-competitiveness= st.selectbox('competitiveness', data['competitiveness'].unique())
-operating_risk= st.selectbox('operating_risk', data['operating_risk'].unique())
+#industrial_risk= st.selectbox('industrial_risk', data['industrial_risk'].unique())
+#management_risk= st.selectbox('management_risk', data['management_risk'].unique())
+#financial_flexibility= st.selectbox('financial_flexibility', data['financial_flexibility'].unique())
+#credibility= st.selectbox('credibility', data['credibility'].unique())
+#competitiveness= st.selectbox('competitiveness', data['competitiveness'].unique())
+#operating_risk= st.selectbox('operating_risk', data['operating_risk'].unique())
 
 
 
@@ -132,7 +132,7 @@ pickled_model=pickle.load(open('final_KNN_model.pkl','rb'))
 pickled_model.fit(x_train,y_train)
 pk=pickled_model.predict(x_test)
 
-if st.button('Mushroom type'):
+if st.button('prevention type'):
    # query = np.array([cap_shape,cap_surface,cap_color,bruises,odor,
                       #gill_spacing,gill_size,gill_color,stalk_shape,stalk_root,stalk_surface_above_ring,
                       #stalk_color_above_ring,ring_type,spore_print_color,population,habitat])
@@ -142,11 +142,11 @@ if st.button('Mushroom type'):
     prediction=pickled_model.predict(data.drop('class',axis=1))
     
     if pk.any()==1:
-        prediction = "edible Mushroom"
+        prediction = "banrupy"
     else:
-        prediction = "Poidn Mushroom"
+        prediction = "nonbankrup"
        
-    st.title("Mushroom type is " + str(prediction))
+    st.title("business type is " + str(prediction))
     
 
 
