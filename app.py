@@ -70,17 +70,17 @@ operating_risk = st.selectbox('operating_risk', [0,0.5,1])
 
 
 
-#data['industrial_risk']=data['industrial_risk'].replace({0:'low',0.5:'medium',1:'high'})
+data[' industrial_risk']=data[' industrial_risk'].replace({0:'low',0.5:'medium',1:'high'})
 
-#data['management_risk']=data['management_risk'].replace({0:'low',0.5:'medium',1:'high'})
+data[' management_risk']=data[' management_risk'].replace({0:'low',0.5:'medium',1:'high'})
 
-#data['financial_flexibility']=data['financial_flexibility'].replace({0:'low',0.5:'medium',1:'high'})
+data[' financial_flexibility']=data[' financial_flexibility'].replace({0:'low',0.5:'medium',1:'high'})
 
-#data['credibility']=data['credibility'].replace({0:'low',0.5:'medium',1:'high'})
+data[' credibility']=data[' credibility'].replace({0:'low',0.5:'medium',1:'high'})
 
-#data['competitiveness']=data['competitiveness'].replace({0:'low',0.5:'medium',1:'high'})
+data[' competitiveness']=data[' competitiveness'].replace({0:'low',0.5:'medium',1:'high'})
 
-#data['operating_risk']=data['operating_risk'].replace({0:'low',0.5:'medium',1:'high'})
+data[' operating_risk']=data[' operating_risk'].replace({0:'low',0.5:'medium',1:'high'})
 
 
 
