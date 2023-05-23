@@ -89,7 +89,7 @@ if st.button('prevention type'):
   
    # prediction=pickled_model.predict(data.drop(' class',axis=1))
     
-    if pk.any()==1:
+    if pk()==0:
         prediction = "Bankruptcy"
     else:
         prediction = "Non-Bankruptcy"
