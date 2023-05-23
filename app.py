@@ -36,12 +36,12 @@ data=pd.read_excel('bankruptcy-prevention.xlsx')
 
 
 data.head()
-industrial_risk = st.selectbox('industrial_risk', [0,0.5,1])
-management_risk = st.selectbox('management_risk', [0,0.5,1])
-financial_flexibility = st.selectbox('financial_flexibility', [0,0.5,1])
-credibility = st.selectbox('credibility', [0,0.5,1])
-competitiveness =st.selectbox('competitiveness', [0,0.5,1])
-operating_risk = st.selectbox('operating_risk', [0,0.5,1])
+Industrial_risk = st.selectbox('industrial_risk', [0,0.5,1])
+Management_risk = st.selectbox('management_risk', [0,0.5,1])
+Financial_flexibility = st.selectbox('financial_flexibility', [0,0.5,1])
+Credibility = st.selectbox('credibility', [0,0.5,1])
+Competitiveness =st.selectbox('competitiveness', [0,0.5,1])
+Operating_risk = st.selectbox('operating_risk', [0,0.5,1])
   
   
   
@@ -70,17 +70,17 @@ operating_risk = st.selectbox('operating_risk', [0,0.5,1])
 
 
 
-data[' industrial_risk']=data[' industrial_risk'].replace({0:'low',0.5:'medium',1:'high'})
+#data[' industrial_risk']=data[' industrial_risk'].replace({0:'low',0.5:'medium',1:'high'})
 
-data[' management_risk']=data[' management_risk'].replace({0:'low',0.5:'medium',1:'high'})
+#data[' management_risk']=data[' management_risk'].replace({0:'low',0.5:'medium',1:'high'})
 
-data[' financial_flexibility']=data[' financial_flexibility'].replace({0:'low',0.5:'medium',1:'high'})
+#data[' financial_flexibility']=data[' financial_flexibility'].replace({0:'low',0.5:'medium',1:'high'})
 
-data[' credibility']=data[' credibility'].replace({0:'low',0.5:'medium',1:'high'})
+#data[' credibility']=data[' credibility'].replace({0:'low',0.5:'medium',1:'high'})
 
-data[' competitiveness']=data[' competitiveness'].replace({0:'low',0.5:'medium',1:'high'})
+#data[' competitiveness']=data[' competitiveness'].replace({0:'low',0.5:'medium',1:'high'})
 
-data[' operating_risk']=data[' operating_risk'].replace({0:'low',0.5:'medium',1:'high'})
+#data[' operating_risk']=data[' operating_risk'].replace({0:'low',0.5:'medium',1:'high'})
 
 
 
