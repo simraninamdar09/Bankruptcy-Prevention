@@ -38,28 +38,22 @@ data=pd.read_excel('bankruptcy-prevention.xlsx')
 data.head()
 
 data['industrial_risk']=np.where(data['industrial_risk'].isin([0,0.5,1]),
-                           data['industrial_risk'].str.title(),
-                           'Other_risk')
+                           data['industrial_risk'])
 
 data['management_risk']=np.where(data['management_risk'].isin([0,0.5,1]),
-                           data['management_risk'].str.title(),
-                           'Other_risk')
+                           data['management_risk'])
 
 data['financial_flexibility']=np.where(data['financial_flexibility'].isin([0,0.5,1]),
-                           data['financial_flexibility'].str.title(),
-                           'Other_risk')
+                           data['financial_flexibility'])
 
 data['credibility']=np.where(data['credibility'].isin([0,0.5,1]),
-                           data['credibility'].str.title(),
-                           'Other_risk')
+                           data['credibility'])
 
 data['competitiveness']=np.where(data['competitiveness'].isin([0,0.5,1]),
-                           data['competitiveness'].str.title(),
-                           'Other_risk')
+                           data['competitiveness'])
 
 data['operating_risk']=np.where(data['operating_risk'].isin([0,0.5,1]),
-                           data['operating_risk'].str.title(),
-                           'Other_risk')
+                           data['operating_risk'])
 
 
 
