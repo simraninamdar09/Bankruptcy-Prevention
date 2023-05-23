@@ -93,10 +93,10 @@ if st.button('prevention type'):
        # prediction = "Bankruptcy"
     #else:
       #  prediction = "Non-Bankruptcy"
-    if prediction == 0:
-        prediction = 'Bankruptcy'
-    else:
-          prediction = 'Non-bankruptcy'
+if prediction == 0:
+       prediction = 'Bankruptcy'
+else:
+     prediction = 'Non-bankruptcy'
         
        
     st.title("business type is " + str(prediction))
