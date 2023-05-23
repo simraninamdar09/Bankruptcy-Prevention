@@ -98,9 +98,9 @@ if st.button('prevention type'):
          pk = 'Non-bankruptcy'
   
   
-prediction=pickled_model.predict(data.drop(' class',axis=1))
+#prediction=pickled_model.predict(data.drop(' class',axis=1))
     
-st.title("business type is " + str(prediction))
+st.title("business type is " )#+ str(prediction))
     
 
 
