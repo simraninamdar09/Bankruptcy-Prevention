@@ -128,8 +128,8 @@ result_knn = model_knn.score(x_test,y_test)
 print(np.round(result_knn, 4))
 
 
-ffilename = 'final_KNN_model.pkl'
-pickled_model=pickle.load(open('final_KNN_model.pkl','rb'))
+ffilename = 'final_KNN_model1.pkl'
+pickled_model=pickle.load(open('final_KNN_model1.pkl','rb'))
 pickled_model.fit(x_train,y_train)
 pk=pickled_model.predict(x_test)
 
