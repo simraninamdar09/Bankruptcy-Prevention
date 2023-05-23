@@ -87,14 +87,14 @@ pk=pickled_model.predict(x_test)
 
 if st.button('prevention type'):
   
-    prediction=pickled_model.predict(data.drop(' class',axis=1))
+   # prediction=pickled_model.predict(data.drop(' class',axis=1))
     
     if pk.any()==1:
         prediction = "Bankruptcy"
     else:
         prediction = "Non-Bankruptcy"
        
-    st.title("business type is " + (prediction))
+    st.title("business type is " + str(prediction))
     
 
 
