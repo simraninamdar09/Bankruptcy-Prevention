@@ -3,7 +3,7 @@
 
 # In[31]:
 
-#import pickle
+import pickle
 
 #libraries
 import pandas as pd # data processing
