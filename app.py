@@ -97,9 +97,8 @@ if prediction == 0:
        prediction = 'Bankruptcy'
 else:
      prediction = 'Non-bankruptcy'
-        
-       
-    st.title("business type is " + str(prediction))
+    
+st.title("business type is " + str(prediction))
     
 
 
