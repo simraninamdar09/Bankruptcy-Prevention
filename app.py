@@ -59,7 +59,7 @@ num_trees = 60
 kfold=KFold(n_splits=5,random_state=72,shuffle=True)
 model = AdaBoostClassifier(n_estimators=num_trees,random_state=8)
 #model.fit(x_train, y_train)
-result_ab = cross_val_score(model, x_train, y_train, cv=kfold)
+result_ab = cross_val_score(model, x, y, cv=kfold)
 result_ab.mean()
 #Accuracy
 print(result_ab.mean())
