@@ -54,11 +54,13 @@ y= data[' class']
 
 # Train-Test Split 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42)
-
+num_trees = 60
 #AdaBoost Classification
 kfold=KFold(n_splits=5,random_state=72,shuffle=True)
-ab = AdaBoostClassifier(n_estimators=60, random_state=8)        
-result_ab = cross_val_score(ab, x, y, cv=kfold)
+model = AdaBoostClassifier(n_estimators=num_trees, random_state=8)
+model.fit(x_train, y_train)
+results.mean()
+#result_ab = cross_val_score(ab, x, y, cv=kfold)
 
 #Accuracy
 print(result_ab.mean())
