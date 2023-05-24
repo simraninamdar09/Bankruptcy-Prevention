@@ -54,7 +54,7 @@ y= data[' class']
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42)
 
 #AdaBoost Classification
-kfold=KFold(n_splits=5,random_state=72,shuffle=True)
+#kfold=KFold(n_splits=5,random_state=72,shuffle=True)
 ab = AdaBoostClassifier(n_estimators=60, random_state=8)        
 result_ab = cross_val_score(ab, x, y, cv=kfold)
 
