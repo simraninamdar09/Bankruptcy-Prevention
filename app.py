@@ -63,7 +63,7 @@ model = [AdaBoostClassifier(n_estimators=60,random_state=8)]
 result_ab = cross_val_score(model, x, y, cv=kfold)
 result_ab.mean()
 #Accuracy
-#print(result_ab.mean())
+print(result_ab.mean())
 
 #Pickel file
 ffilename = 'final_Adaboost_model.pkl'
