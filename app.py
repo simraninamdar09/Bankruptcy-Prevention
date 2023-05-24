@@ -67,7 +67,7 @@ print(result_ab.mean())
 #Pickel file
 ffilename = 'final_Adaboost_model.pkl'
 pickled_model=pickle.load(open('final_Adaboost_model.pkl','rb'))
-pickled_model.fit(x,y)
+pickled_model.fit(x_train,y_train)
 pk=pickled_model.predict(x_test)
 
 
