@@ -16,7 +16,7 @@ from sklearn.model_selection import train_test_split
 import warnings
 warnings.filterwarnings('ignore')
 
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import AdaBoostClassifier
 
 import pickle as pickle
 import streamlit as st
@@ -53,17 +53,17 @@ y= data[' class']
 # Train-Test Split 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=42)
 
-#KNN Classification
-model_knn = KNeighborsClassifier(n_neighbors=2)
-model_knn.fit(x_train,y_train)
-result_knn = model_knn.score(x_test,y_test)
+#AdaBoost Classification
+kfold=KFold(n_splits=5,random_state=72,shuffle=True)
+ab = AdaBoostClassifier(n_estimators=60, random_state=8)        
+result_ab = cross_val_score(ab, x, y, cv=kfold)
 
 #Accuracy
-print(np.round(result_knn, 4))
+print(result_ab.mean())
 
 #Pickel file
-ffilename = 'final_KNN_model1.pkl'
-pickled_model=pickle.load(open('final_KNN_model1.pkl','rb'))
+ffilename = 'final_Adaboost_model.pkl'
+pickled_model=pickle.load(open('final_Adaboost_model.pkl','rb'))
 pickled_model.fit(x_train,y_train)
 pk=pickled_model.predict(x_test)
 
