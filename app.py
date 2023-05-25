@@ -29,7 +29,7 @@ model = AdaBoostClassifier(n_estimators=60, random_state=8)
 # Train the classifier
 model.fit(x_train, y_train)
 # Predict on the test set
-y_pred = model.predict(X_test)
+y_pred = model.predict(x_test)
 # Calculate accuracy
 accuracy = accuracy_score(y_test, y_pred)
 print('Accuracy:', accuracy)
