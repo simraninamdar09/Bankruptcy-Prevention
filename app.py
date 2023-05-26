@@ -24,15 +24,12 @@ y = data[' class']
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
 
-# Create the KNN classifier
-model = AdaBoostClassifier(n_estimators=60, random_state=8)   
-# Train the classifier
-model.fit(x_train, y_train)
-# Predict on the test set
-y_pred = model.predict(x_test)
-# Calculate accuracy
-accuracy = accuracy_score(y_test, y_pred)
-print('Accuracy:', accuracy)
+# Create the AdaBoost classifier
+model_ab= AdaBoostClassifier(n_estimators=60, random_state=8)        
+result_ab = cross_val_score(model_ab, x, y, cv=kfold)
+#Accuracy
+print(result_ab.mean())
+
 
 
 model_path = 'final_Adaboost_model.pkl'
