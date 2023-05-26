@@ -37,7 +37,7 @@ print(result_ab.mean())
 
 filename = 'final_Adaboost_model.pkl'
 pickle.dump(model_ab, open(filename,'wb'))
-pickled_model.fit(x,y)
+model_ab.fit(x,y)
 pk=model.predict(x_test)
 
 
