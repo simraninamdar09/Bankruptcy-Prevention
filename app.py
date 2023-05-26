@@ -37,7 +37,7 @@ print(result_ab.mean())
 
 model_path = 'final_Adaboost_model.pkl'
 model = pickle.load(open(model_path, 'rb'))
-model.fit(x_train,y_train)
+#model.fit(x_train,y_train)
 pk=model.predict(x_test)
 
 
