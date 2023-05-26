@@ -60,7 +60,7 @@ if st.button('Prevention Type'):
     }
 
     df1 = pd.DataFrame(df, index=[1])
-    predictions = model.predict(df1)
+    predictions = model_ab.predict(df1)
 
     if predictions.any() == 1:
         prediction_value = 'Non-Bankruptcy'
