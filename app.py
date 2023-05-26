@@ -37,8 +37,8 @@ print(result_ab.mean())
 
 model_path = 'final_Adaboost_model.pkl'
 model = pickle.load(open(model_path, 'rb'))
-model.fit(x_train,y_train)
-#pk=model.predict(x_test)
+model.fit(x,y)
+pk=model.predict(x_test)
 
 
 Industrial_risk = st.selectbox('industrial_risk', data['industrial_risk'].unique())
