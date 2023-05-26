@@ -35,8 +35,8 @@ print(result_ab.mean())
 
 
 
-model_path = 'final_Adaboost_model.pkl'
-model = pickle.load(open(model_path, 'rb'))
+filename = 'final_Adaboost_model.pkl'
+model=pickle.dump(model_ab, open(filename,'wb'))
 model.fit(x,y)
 pk=model.predict(x_test)
 
