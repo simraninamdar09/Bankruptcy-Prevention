@@ -7,6 +7,7 @@ import streamlit as st
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.model_selection import cross_val_score
 from sklearn.metrics import accuracy_score
 
 # Load the dataset
