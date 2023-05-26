@@ -7,6 +7,7 @@ import streamlit as st
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import accuracy_score
 
@@ -26,6 +27,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 
 
 # Create the AdaBoost classifier
+kfold=KFold(n_splits=5,random_state=72,shuffle=True)
 model_ab= AdaBoostClassifier(n_estimators=60, random_state=8)        
 result_ab = cross_val_score(model_ab, x, y, cv=kfold)
 #Accuracy
