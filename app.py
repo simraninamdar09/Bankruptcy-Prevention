@@ -32,7 +32,7 @@ model_ab= AdaBoostClassifier(n_estimators=60, random_state=8)
 result_ab = cross_val_score(model_ab, x, y, cv=kfold)
 #Accuracy
 print(result_ab.mean())
-
+st.title("Bankruptcy-Prevention")
 
 
 filename = 'final_Adaboost_model.pkl'
@@ -48,7 +48,7 @@ Credibility = st.selectbox(' Credibility', data[' credibility'].unique())
 Competitiveness = st.selectbox(' Competitiveness', data[' competitiveness'].unique())
 Operating_risk = st.selectbox(' Operating_risk', data[' operating_risk'].unique())
 
-st.title("Bankruptcy-Prevention")
+
 
 if st.button('Prevention Type'):
     df = {
