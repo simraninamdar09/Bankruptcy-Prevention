@@ -48,7 +48,7 @@ Credibility = st.selectbox(' Credibility', data[' credibility'].unique())
 Competitiveness = st.selectbox(' Competitiveness', data[' competitiveness'].unique())
 Operating_risk = st.selectbox(' Operating_risk', data[' operating_risk'].unique())
 
-
+st.title("Bankruptcy-Prevention")
 if st.button('Prevention Type'):
     df = {
         'industrial_risk': Industrial_risk,
