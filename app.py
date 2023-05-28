@@ -33,16 +33,6 @@ result_ab = cross_val_score(model_ab, x, y, cv=kfold)
 #Accuracy
 print(result_ab.mean())
 
-st.markdown(
-   
-   <style>
-   p {
-   background-image: url(‘img1.jfif’);
-   }
-   </style>
-   ,
-   unsafe_allow_html=True)
-
 
 filename = 'final_Adaboost_model.pkl'
 pickle.dump(model_ab, open(filename,'wb'))
