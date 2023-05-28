@@ -34,13 +34,13 @@ result_ab = cross_val_score(model_ab, x, y, cv=kfold)
 print(result_ab.mean())
 
 st.markdown(
-   f”””
+   
    <style>
    p {
    background-image: url(‘img1.jfif’);
    }
    </style>
-   ”””,
+   ,
    unsafe_allow_html=True)
 
 
