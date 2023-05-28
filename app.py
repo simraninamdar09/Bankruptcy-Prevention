@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score
 # Load the dataset
 data=pd.read_excel("bankruptcy-prevention.xlsx")
 
-
+# Encoding Data
 label_encoder = preprocessing.LabelEncoder()
 data[' class'] = label_encoder.fit_transform(data[' class'])
 
@@ -41,7 +41,7 @@ model_ab.fit(x,y)
 pk=model_ab.predict(x_test)
 
 
-Industrial_risk = st.selectbox('industrial_risk', data['industrial_risk'].unique())
+Industrial_risk = st.selectbox('Industrial_risk', data['industrial_risk'].unique())
 Management_risk = st.selectbox(' management_risk', data[' management_risk'].unique())
 Financial_flexibility = st.selectbox(' financial_flexibility', data[' financial_flexibility'].unique())
 Credibility = st.selectbox(' credibility', data[' credibility'].unique())
