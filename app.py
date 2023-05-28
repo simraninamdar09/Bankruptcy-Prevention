@@ -32,7 +32,7 @@ model_ab= AdaBoostClassifier(n_estimators=60, random_state=8)
 result_ab = cross_val_score(model_ab, x, y, cv=kfold)
 #Accuracy
 print(result_ab.mean())
-st.title("Bankruptcy-Prevention")
+
 
 
 filename = 'final_Adaboost_model.pkl'
@@ -40,6 +40,7 @@ pickle.dump(model_ab, open(filename,'wb'))
 model_ab.fit(x,y)
 pk=model_ab.predict(x_test)
 
+st.title("Bankruptcy-Prevention")
 
 Industrial_risk = st.selectbox('Industrial_risk', data['industrial_risk'].unique())
 Management_risk = st.selectbox(' Management_risk', data[' management_risk'].unique())
