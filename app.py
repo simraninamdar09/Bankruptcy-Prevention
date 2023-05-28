@@ -42,11 +42,11 @@ pk=model_ab.predict(x_test)
 
 
 Industrial_risk = st.selectbox('Industrial_risk', data['industrial_risk'].unique())
-Management_risk = st.selectbox(' management_risk', data[' management_risk'].unique())
-Financial_flexibility = st.selectbox(' financial_flexibility', data[' financial_flexibility'].unique())
-Credibility = st.selectbox(' credibility', data[' credibility'].unique())
-Competitiveness = st.selectbox(' competitiveness', data[' competitiveness'].unique())
-Operating_risk = st.selectbox(' operating_risk', data[' operating_risk'].unique())
+Management_risk = st.selectbox(' Management_risk', data[' management_risk'].unique())
+Financial_flexibility = st.selectbox(' Financial_flexibility', data[' financial_flexibility'].unique())
+Credibility = st.selectbox(' Credibility', data[' credibility'].unique())
+Competitiveness = st.selectbox(' Competitiveness', data[' competitiveness'].unique())
+Operating_risk = st.selectbox(' Operating_risk', data[' operating_risk'].unique())
 
 
 if st.button('Prevention Type'):
