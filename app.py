@@ -68,10 +68,10 @@ if st.button('Prevention Type'):
         ' operating_risk': Operating_risk
     }
 
-    df1 = pd.DataFrame(df, index=[1])
+    df1 = pd.DataFrame(df, index=['High])
     predictions = model_ab.predict(df1)
 
-    if predictions.any() == 1:
+    if predictions.any() == 'High:
         prediction_value = 'Non-Bankruptcy'
     else:
         prediction_value = 'Bankruptcy'
