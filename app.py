@@ -42,6 +42,11 @@ pk=model_ab.predict(x_test)
 st.title("Bankruptcy-Prevention")
 
 data['industrial_risk']=data['industrial_risk'].replace({0.0:'Low',0.5:'Medium',1:'High'})
+data[' management_risk']=data[' management_risk'].replace({0.0:'Low',0.5:'Medium',1:'High'})
+data[' financial_flexibility']=data[' financial_flexibility'].replace({0.0:'Low',0.5:'Medium',1:'High'})
+data[' credibility']=data[' credibility'].replace({0.0:'Low',0.5:'Medium',1:'High'})
+data[' competitiveness']=data[' competitiveness'].replace({0.0:'Low',0.5:'Medium',1:'High'})
+data[' operating_risk']=data[' operating_risk'].replace({0.0:'Low',0.5:'Medium',1:'High'})
 
 
 Industrial_risk = st.selectbox('Industrial_risk', data['industrial_risk'].unique())
