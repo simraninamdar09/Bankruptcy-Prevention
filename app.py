@@ -71,12 +71,18 @@ if st.button('Prevention Type'):
     df1 = pd.DataFrame(df, index=['High'])
     predictions = model_ab.predict(df1)
 
-    if predictions.any() == 'High':
-        prediction_value = 'Non-Bankruptcy'
+ #   if predictions.any() == 'High':
+  #      prediction_value = 'Non-Bankruptcy'
+  #  else:
+     #   prediction_value = 'Bankruptcy'
+    if pk.any()==1:
+        prediction = "Non-Bankruptcy'"
     else:
-        prediction_value = 'Bankruptcy'
-
-    st.title("Business type is " + str(prediction_value))
+        prediction = "Bankruptcy'"
+       
+    st.title("Mushroom type is " + str(prediction))
+    
+ #   st.title("Business type is " + str(prediction_value))
 
 
     
