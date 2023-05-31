@@ -41,7 +41,7 @@ pk=model_ab.predict(x_test)
 
 st.title("Bankruptcy-Prevention")
 
-data['industrial_risk']=data[''industrial_risk''].replace({0.0:'Low',0.5:'Medium',1:'High'})
+data['industrial_risk']=data['industrial_risk'].replace({0.0:'Low',0.5:'Medium',1:'High'})
 
 
 Industrial_risk = st.selectbox('Industrial_risk', data['industrial_risk'].unique())
